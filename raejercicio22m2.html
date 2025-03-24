@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cambiar texto con DOM</title>
+</head>
+<body>
+
+<p id="texto"> felizzzzzz </p>
+<button id="boton">Cambiar texto</button>
+
+<script>
+
+const textoElemento = document.getElementById('texto');
+const botonElemento = document.getElementById('boton');
+botonElemento.addEventListener('click', function() {
+  
+  textoElemento.textContent = 'Texto cambiado a tristeza :( )';
+});
+</script>
+
+</body>
+</html>

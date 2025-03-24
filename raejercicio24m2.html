@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cambiar texto con DOM</title>
+</head>
+<body>
+
+<ul id="milista">
+    <li> Elemento 1</li>
+    <li> Elemento 2</li>
+</ul>
+<button onclick="agregarElemento()">agregar elemento</button>
+
+<script>
+
+    function agregarElemento(){
+        const nuevoElemento =
+        document.createElement("li");
+        nuevoElemento.textContent = "nuevo elemento";
+        document.getElementById("milista").appendChild(nuevoElemento);
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cambiar texto con DOM</title>
+</head>
+<body>
+
+    <input type="text" id="texto-ingresado" placeholder="Escribe algo aqui:">
+<p id="mensaje"></p>
+
+<script>
+const inputTexto = document.getElementById('texto-ingresado');
+const mensaje = document.getElementById('mensaje');
+
+inputTexto.addEventListener('input', function() {
+  const valorIngresado = inputTexto.value;
+  mensaje.textContent = `Has ingresado: ${valorIngresado}`;
+});
+</script>
+
+</body>
+</html>

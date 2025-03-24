@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cambiar texto con DOM</title>
+</head>
+<body>
+
+    <ul id="miLista2">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+      <button onclick="eliminarElemento()">Eliminar elemento</button>
+
+<script>
+
+function eliminarElemento() {
+  const lista = document.getElementById("miLista2");
+  const elementoAEliminar = lista.querySelector("li:last-child"); // Elimina el último elemento
+  if (elementoAEliminar) {
+    lista.removeChild(elementoAEliminar);
+  }
+}
+</script>
+
+</body>
+</html>
